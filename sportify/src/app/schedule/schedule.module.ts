@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ScheduleComponent } from './schedule.component';
 import { ScheduleRoutingModule } from './schedule-routing.module';
+import { ElementsModule } from '../elements/elements.module';
 
 
 
@@ -9,8 +10,9 @@ import { ScheduleRoutingModule } from './schedule-routing.module';
   declarations: [ScheduleComponent],
   imports: [
     CommonModule,
-    ScheduleRoutingModule
+    ScheduleRoutingModule,
+    ElementsModule
   ],
-  exports: [ScheduleComponent]
+  exports: []
 })
 export class ScheduleModule { }

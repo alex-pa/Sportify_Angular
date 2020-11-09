@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { applySourceSpanToExpressionIfNeeded } from '@angular/compiler/src/output/output_ast';
+import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'account',
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.css']
 })
-export class AccountComponent implements OnInit {
+export class AccountComponent {
+  name:string = 'Alex'
+  email:string = 'example@gmail.com'
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  myForm : FormGroup;
+    constructor(){
+        this.myForm = new FormGroup({
+            "userName": new FormControl(this.name),
+            "userEmail": new FormControl(this.email)
+        });
+    }
+      
+    submit(){
+        
+      }
 }
+

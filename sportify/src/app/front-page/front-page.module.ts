@@ -11,6 +11,6 @@ import { FrontPageRoutingModule } from './front-page-routing.module';
     CommonModule,
     FrontPageRoutingModule
   ],
-  exports: [MainPageComponent]
+  exports: []
 })
 export class FrontPageModule { }

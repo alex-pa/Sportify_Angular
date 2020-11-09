@@ -7,6 +7,7 @@ import { AccountComponent } from './account/account.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ElementsModule } from '../elements/elements.module';
 import { ProfileRoutingModule } from './profile-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ProfileRoutingModule } from './profile-routing.module';
   imports: [
     CommonModule,
     ElementsModule,
-    ProfileRoutingModule
+    ProfileRoutingModule,
+    ReactiveFormsModule
   ],
   exports: []
 })

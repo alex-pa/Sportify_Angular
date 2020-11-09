@@ -5,6 +5,7 @@
   }
   
   .header a {
+    margin-right: 10px;
     float: left;
     color: black;
     text-align: center;

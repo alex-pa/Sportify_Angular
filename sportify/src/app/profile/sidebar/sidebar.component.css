@@ -1,0 +1,42 @@
+div {  
+   overflow: hidden;
+   border: solid #dbdbdb;
+   border-width: 1px 1px 0 1px;
+   border-radius: 4px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    padding-right: 200px;
+    font-size: 12px;
+    font-weight: bold;
+    border: solid #dbdbdb;
+    border-width: 0 0 1px 0;
+}
+
+a:hover {
+    background-color: #f1f1f1;
+}
+
+a:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+h3 {
+    padding: 20px;
+    margin: 0;
+    border-radius: 4px 4px 0 0;
+    border: solid #dbdbdb;
+    border-width: 0 0 1px 0;
+}
+
+.active {
+    background-color: #f1f1f1;
+}
+
+.active:hover {
+    cursor: default;
+}
